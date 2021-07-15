@@ -7,7 +7,7 @@ function Bar() {
   }, []);
   const obtenerBar = async () => {
     const data = await fetch(
-      "http://187.150.103.77/api/oasis/centro_consumo/bares"
+      "http://127.0.0.1:8000/api/oasis/centro_consumo/bares"
     );
     const bares = await data.json();
 
