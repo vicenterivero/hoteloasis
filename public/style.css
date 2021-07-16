@@ -18,7 +18,8 @@ html{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    letter-spacing: 0.1em
+    letter-spacing: 0.1em;
+    width: 100%;
 }
 .barra{
     width: 100%;
@@ -366,4 +367,384 @@ height: 50%;
     width: 200px;
     margin: 20px 0;
     color: #343434;
+}
+
+@media screen and (min-width:375px) and (max-width:812px){
+    #root{
+        margin: 0;
+        padding: 0;
+    }
+    h1,h2,h3,h4,h5{
+        text-decoration: none;
+        margin: 0%;
+        padding: 0%;
+    }
+    .App{
+       
+       text-align: center;
+       margin-top: 0%;
+    }
+    html{
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 0.1em
+    }
+    .barra{
+        width: 100%;
+        height: 60px;
+        background: #bf0811;
+        margin: 0%;
+        text-transform: uppercase;
+        letter-spacing: 0em
+    }
+    .barra__contenido{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+       color: #ffff;
+       
+     
+    }
+    .barra__logo{
+        width: 40px;
+        position: absolute;
+        right: 12%;
+    }
+    .barra__titulo{
+        font-size: 10px;
+        margin: 0 0px;
+        text-align: start;
+        border-right: #ffff solid 2px;
+        padding-right: 5px;
+    
+    }
+    .barra__texto{
+        font-size: 10px;
+        margin: 0%;
+        text-align: start;
+        width: 8%;
+      text-align: center;
+    }
+    .barra__texto__fecha{
+        font-size: 10px;
+        margin: 0%;
+        text-align: start;
+        width: auto;
+      text-align: center;
+    
+    }
+    
+    .container__componente{
+        margin: 0 !important;
+        display: block;
+        width: 90%;
+        height: 812px;
+        
+      /*   position: relative;
+        top:-17px; */
+      
+    }
+    .container__restaurantes{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10%;
+     
+    
+       
+    }
+    
+    .container__bar{
+        width: 95%;
+        color: #ffff;
+        background: #343434;
+        margin-top: 10px;
+   
+     
+     
+     /*    padding: 0 2% 0 2%; */
+    }
+    .container__detalles{
+        width: 100%;
+      
+        margin-top: 20px;
+        margin-left: 5%;
+     
+      
+    /*     padding: 0 0% 0 2%; */
+    }
+    .container__contenido{
+    
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+      
+    }
+    .container__contenido::-webkit-scrollbar {
+        width: 0px;     /* Tamaño del scroll en vertical */
+        height: 0px;    /* Tamaño del scroll en horizontal */
+        display: none;  /* Ocultar scroll */
+    }
+    html::-webkit-scrollbar {
+        width: 0px;     /* Tamaño del scroll en vertical */
+        height: 0px;    /* Tamaño del scroll en horizontal */
+        display: none;  /* Ocultar scroll */
+       
+    }
+    
+    
+    /* Restaurantes */
+    .scroll{
+        width: 100%;
+        height: 80px;
+        align-items: center;
+        justify-content: center;
+        display: inline-flex;
+        border-bottom: #000000 solid 2px;
+    }
+    .titulo__restaurante{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .contenido__api{
+        letter-spacing: 0;
+       text-align: left;
+    
+        width: 100%;
+        height: 20vh;
+        margin: -2px 0;
+        border-collapse: collapse;
+        border-bottom: #000000 solid 2px;
+        border-top: #000000 solid 2px;
+    }
+    .titulo__individual{
+        font-size: 19px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .concepto{
+        font-size: 18px;
+        font-weight: normal;
+        color: #c7343b;
+    
+    }
+    .horario{
+        font-size: 18px;
+        font-weight: normal;
+        margin-top: 10px;
+    
+    }
+    /* div padres de restaurantes */
+    .titulo__restaurante__div{
+    height: 50%;
+    width: 100%;
+    
+    padding: 10px 0;
+    }
+    .titulo__individual__concepto{
+        width: 60%;
+        font-size: 10px;
+        
+    }
+    .horario__indivual{
+        height: 50%;
+        width: 100%;
+        display:flex;
+    
+    }
+    
+    .horario__individual__hora{
+    width: 50%;
+    
+    }
+    .horario__indivual__boton{
+        width: 50%;
+    
+        text-align: end;
+    }
+    .boton__restaurante{
+        background-color: #ffff;
+        font-size: 22px;
+        width: 70%;
+        height: 60%;
+        border-radius: 5px;
+        border: #000000 solid 1.5px;  
+        font-weight: bold;
+        
+    }
+    .boton__restaurante:hover{
+        background-color: rgb(0, 0, 0);
+        color: #ffff;
+        font-size: 22px;
+        width: 70%;
+        height: 60%;
+        border-radius: 5px;
+        border: #000000 solid 1.5px;  
+        font-weight: bold;
+        
+    }
+    
+    
+    
+    
+    
+    
+    /* BARES */
+    .scrollbar{
+        width: 100%;
+        height: 80px;
+        align-items: center;
+        justify-content: center;
+        display: inline-flex;
+        border-bottom: #ffffff solid 2px;
+    }
+    .titulo__bar{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .contenido__apibar{
+        letter-spacing: 0;
+       text-align: left;
+        padding: 15px 0;
+        width: 100%;
+        height: 15vh;
+        margin: -2px auto;
+        border-collapse: collapse;
+        border-bottom: #dadada solid 2px;
+        border-top: #dadada solid 2px;
+    }
+    .titulo__individualbar{
+        font-size: 19px;
+        font-weight: bold;
+    }
+    
+    .horariobar{
+        font-size: 18px;
+        font-weight: normal;
+    
+    }
+    .titulo__bar__div{
+        height: 40%;
+        width: 100%;
+    
+        padding: 5px 0;
+        }
+        .horario__indivualbar{
+            height: 60%;
+            width: 100%;
+            display:flex;
+        
+        }
+        .horario__individual__horabar{
+        width: 50%;
+    
+        
+        }
+        .horario__indivual__botonbar{
+            width: 50%;
+        
+            text-align: end;
+    
+    
+        }
+        .boton__restaurantebar{
+            background-color: #343434;
+            font-size: 22px;
+            width: 80%;
+            height: 85%;
+            border-radius: 5px;
+            border: #ffffff solid 1.5px;  
+            font-weight: bold;
+            color: #ffffff;
+            
+        }
+        .boton__restaurantebar:hover{
+            background-color: #ffffff;
+            font-size: 22px;
+            width: 80%;
+            height: 85%;
+            border-radius: 5px;
+            border: #ffffff solid 1.5px;  
+            font-weight: bold;
+            color: #343434;
+            
+        }
+        /* detalles */
+     .logo{
+       
+         width: 100px;  
+         position: absolute;
+         right: 35%;
+    
+     }
+     .portada{
+         width: 100%;
+      /*     */
+     }
+     .titulo__detalle{
+        color: #c7343b;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+     }
+     .scrolldetalle{
+        width: 100%;
+        height: 80px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-bottom: #ffffff solid 2px;
+        
+    }
+    .informacion__detalle{
+    width: 95%;
+    height: auto;
+/*     display: flex;
+    text-align: left;   
+    justify-content: center;
+    align-items: center; */
+    margin-top: -200px;
+    
+    
+    }
+    .titulo__individual__detalle{
+       margin-top: 25px;
+        font-size: 19px;
+        text-transform: uppercase;
+    
+    }
+    .titulo__detalle__div{
+    width: 60%;
+    border-right: #bebebe solid 2px;
+    margin-right: 20px;
+    margin-left: 50px;
+    padding-right: 10px;
+    height: 50%;
+    
+    }
+    .concepto__detalle{
+        color: #343434;
+        font-size: 14px;
+        margin: 20px 0;
+        width: 200px;
+    
+    }
+    /* .titulo__individual__detalle{
+        color: #343434;
+        font-size: 19px;
+        font-weight: bold;
+    } */
+    .horario__detalle{
+        width: 100%;
+     
+     
+    }
+    .horario__detalle__text{    
+        font-size: 15px;
+        width: 200px;
+        margin: 20px 0;
+        color: #343434;
+    }
 }
