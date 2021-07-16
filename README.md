@@ -1,3 +1,18 @@
+# como instalar e iniciar el proyecto
+1.clonar el repositorio de las apis en laravel en el siguiente enlace: https://github.com/vicenterivero/apsioasis
+
+2.ejecutar el comando php artisan serve
+
+3.clonar el repositorio actual https://github.com/vicenterivero/hoteloasis
+
+4.ejecutar el comando yarn start o npm start para ejecutar el proyecto
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
